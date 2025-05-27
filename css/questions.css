@@ -1,0 +1,24 @@
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+ 
+}
+h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+p.lead {
+  color: #6b7280;
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.5);
+  outline: none;
+}

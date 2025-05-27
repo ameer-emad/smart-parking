@@ -1,0 +1,140 @@
+:root {
+    --nav-color: #180446;          
+    --main-color: #EAEAEA;    
+    --home-color: #4F2C9E;     
+    --text-color: white;      
+    --hover-color: orange;     
+    --font-family: 'Arial', sans-serif; 
+  }
+  
+  
+  body {
+    background-color: var(--main-color) !important;
+    font-family: var(--font-family);
+  }
+  
+  body {
+    background-color: #f8f9fa;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.content {
+    background-color: #e2e3e5;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.btn-purple {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+.btn-purple:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+.play{
+  color:#180446;
+  font-size: 20px;
+  font-weight:bold;
+  text-decoration-color:#180446;
+} 
+
+.hex-image img{
+  object-fit: cover;  
+  object-position: center;
+  width: 300px;
+  height: 300px;
+  clip-path: polygon(
+    50% 0%,
+    93% 25%,
+    93% 75%,
+    50% 100%,
+    7% 75%,
+    7% 25%
+  );
+  margin: 0 auto; }
+  .park{
+    font-weight: bold;
+    color: #180446;
+
+  }
+
+
+
+.dashed-line {
+  border-top: 3px dashed #949494;
+  position: absolute;
+  top: 40%;
+  width: 35%;
+}
+.line-logo {
+  border-top: 3px dashed #949494;
+  position: absolute;
+  top: 40%;
+  width:100%;
+}
+.dashed-line-left {
+  border-left: 3px dashed #949494;
+  position: absolute;
+  height:120%;
+}
+.left-line {
+  left: 100%;
+}
+.right-line {
+  right: 100%;
+}
+.top-line {
+  top:100%;
+}
+.bottom-line {
+  bottom:100%;
+}
+
+.dashed-circle {
+  width: 150px; 
+  height: 150px; 
+  border: 3px dashed; 
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  border-color: #949494; 
+}
+.img-fluid{
+  border: 2px solid; 
+  border-color:#949494; 
+
+}
+
+ /* footer */
+.footer {
+    background-color: #180446;
+    color: white;
+    padding: 2rem 0;
+} 
+ .footer a {
+    color: white;
+    text-decoration: none;
+   
+}
+.footer li {
+    list-style-type: none;
+} 
+
+
+ .icon {
+  margin: 0 10px; 
+  display: inline-block; 
+}
+.icon img {
+  width: 24px; 
+  height: 24px;
+  overflow: hidden;  
+} 
+
