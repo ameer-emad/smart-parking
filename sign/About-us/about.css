@@ -1,0 +1,469 @@
+:root {
+    --nav-color: #180446;          
+    --main-color: #EAEAEA;    
+    --home-color: #4F2C9E;     
+    --text-color: white;      
+    --hover-color: orange;     
+    --font-family: 'Arial', sans-serif; 
+  }
+  
+  
+  
+  .navbar-custom {
+    background-color: var(--nav-color) !important; 
+    font-size: 22px;
+    
+  }
+  .links {
+    margin-right:100px
+  }
+  
+  
+  .navbar-custom .navbar-brand,
+  .navbar-custom .nav-link {
+    color: var(--text-color) !important; 
+    transition:.7s;
+    
+  }
+  .navbar-custom .nav-link{
+    padding-right: 35px!important;
+  
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: var(--hover-color) !important; 
+  }
+  
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    font-size: 1.5rem; 
+    font-weight: bold;
+  }
+  
+  .navbar-brand img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+  }
+  
+  .navbar-nav {
+    margin-left: auto; 
+  }
+  
+  .navbar-custom .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+  }
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+/*Start-of-about-us-seaction*/
+.about-container{
+    background-color: rgba(241, 236, 239, 0.6);
+    height: 450px;
+}
+.about-section {
+    position: relative;
+    max-width: 1030px;
+    margin: auto;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading-about{
+    font-size: 30px;
+    /*font-weight: bolder;*/
+    letter-spacing: 1px;
+    color: black;
+    margin: 10px 0px;
+    margin-bottom: 34px;
+    position: relative;
+}
+.heading-about::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    background-color: rgb(0, 0, 0);
+    width: 46px;
+    height: 2px;
+}
+/* النص على اليسار */
+.text-content {
+    width: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.text-content h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.text-content p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* الصورة على اليمين */
+.image-container {
+    width: 45%;
+    position: relative;
+    z-index: 2;
+}
+
+.image-container img {
+    width: 350px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* الأشكال البرتقالية في الخلفية */
+.shape {
+    position: absolute;
+    background-color: #f58220;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.shape-1 {
+    top: 15px;
+    left: 500px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.shape-2 {
+/* top: -50px;*/
+    right: 30px;
+    width: 250px;
+    height: 348px;
+    border-radius: 20px;
+    transform: rotate(-190deg);
+}
+.shape-3 {
+    top: 30px;
+    left: 600px;
+    width: 80px;
+    height: 100px;
+    border-radius: 50%;
+    /*transform: rotate(-200deg);*/
+}
+.shape-4 {
+    bottom: -10px;
+    right: 350px;
+    width: 100px;
+    height: 75px;
+    border-radius: 50%;
+    transform: rotate(-215deg);
+}
+/* start-media -of- about-us section*/
+@media screen and (max-width: 1024px) {
+    .about-section {
+        max-width: 90%;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .text-content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-container img {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+    }
+    .shape {
+        display: none; /* Hide background shapes for better readability */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heading-about {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .image-container img {
+        width: 90%;
+        max-width: 280px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .about-container {
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .about-section {
+        padding: 30px 10px;
+    }
+
+    .text-content h2 {
+        font-size: 20px;
+    }
+
+    .text-content p {
+        font-size: 13px;
+    }
+
+    .image-container img {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+/*end-media -of- about-us section*/
+
+/*end-of-about-us-seaction*/
+
+/*start-of-our-mission-section*/
+.mission-container {
+    margin-left: 720px;
+    max-width: 600px;
+    /*margin: auto;*/
+    display: flex;
+    justify-content: end;
+}
+.image-card {
+    
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%;
+}
+.image-card img {
+    width: 90%;
+    border-radius: 10px;
+    top: 50%;
+    height: 300px;
+    }
+    .text-card {
+        position: absolute;
+        top: 99%;
+        left: 5%;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        width: 60%;
+        z-index: 100;
+        text-align: left;
+    }
+    p{
+    line-height: 1.5;
+    }
+    .text-card h4 {
+        font-weight:bold;
+    }
+    /*start-media-of-our-mission-section*/
+    @media screen and (max-width: 1024px) {
+        .container {
+            margin-left: 0px; /* Remove excessive left margin for smaller screens */
+        }
+    
+        .mission-container {
+            max-width: 90%; /* Adjust container width */
+            justify-content: center; /* Center elements */
+        }
+    
+        .image-card {
+            width: 100%; /* Ensure full width */
+        }
+    
+        .image-card img {
+            width: 200%;
+            height: 200%; /* Maintain aspect ratio */
+        }
+    
+        .text-card {
+            top: 35%; /* Adjust position */
+            width: 70%; /* Make text card more readable */
+            padding: 15px; /* Reduce padding for smaller screens */
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .mission-container {
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center;
+            text-align: center;
+        }
+        .image-card {
+            width: 100%;
+        }
+    
+        .text-card {
+            top: 80%;
+            left: 10%;
+            width: 80%; /* Make text card wider */
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .text-card {
+            top: 65%;
+            width: 90%; /* Take up more space on smaller screens */
+            padding: 10px;
+        }
+    
+        p {
+            line-height: 1.5; /* Adjust line spacing for readability */
+        }
+    
+        .text-card h4 {
+            font-size: 16px; /* Reduce heading size */
+        }
+    }        
+    /*End-media-of-our-mission-section*/
+
+    /*End-of-our-mission-section*/
+
+
+    /*start - Meet - our - team*/
+.team-container{
+    background-image: url('img/sky-bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.team-section {
+    margin-top: 70px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+/* Swiper container */
+.swiper {
+    width: 100%;
+    max-width: 800px; /* تصغير العرض */
+    margin: auto;
+}
+
+/* Cards */
+.card {
+    margin-bottom: 20px;
+    width: 300px; /* تصغير عرض البطاقة */
+    height: 300px;
+    background: #fff;
+    color: #000;
+    border-radius: 15px ;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Larger center card */
+.swiper-slide-active {
+    transform: scale(1.1); /* تكبير بسيط للكارت الأوسط */
+}
+
+/* Image */
+.card__image {
+    width: 130px; /* تصغير حجم الصورة */
+    height: 130px;
+    margin: auto;
+    border-radius: 50%  ;
+    overflow: hidden;
+    border: 3px solid #180446;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Content */
+.card__content {
+    margin-top: 8px;
+    padding-top: 15px;
+    background: rgba(255, 182, 193, 0.3);
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.card__name {
+    display: block;
+    font-size: 14px; /* تصغير حجم الاسم */
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.card__title {
+    display: block;
+    font-size: 20px; /* تصغير حجم العنوان */
+    color: gray;
+}
+
+/* Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #180446 !important;
+    font-weight: bold;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 18px !important;
+}
+
+    /*End - Meet - our - team*/
+
+
+
+    /* footer */
+.footer {
+    background-color: #180446;
+    color: white;
+    padding: 2rem 0;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+   
+}
+.footer li {
+    list-style-type: none;
+}
+
+
+.icon {
+  margin: 0 10px; 
+  display: inline-block; 
+}
+.icon img {
+  width: 24px; 
+  height: 24px;
+  overflow: hidden;  
+}

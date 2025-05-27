@@ -1,0 +1,89 @@
+body {
+    background-color: #dfe1e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 500px; /* زيادة العرض */
+    padding: 30px; /* توسيع التباعد الداخلي */
+    border-radius: 15px; /* زوايا أكثر نعومة */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15); /* ظل أقوى */
+}
+
+h4 {
+    font-size: 30px; /* تكبير عنوان الصفحة */
+    font-weight: bold;
+    color: #1a133c;
+}
+
+p {
+    font-size: 18px; /* تكبير النص التوضيحي */
+    margin-bottom: 3rem;
+}
+
+.form-control {
+    height: 50px; /* تكبير حجم الإدخال */
+    font-size: 13px;
+    border-radius: 8px;
+    outline: none;
+    transition: 32.3s ease;
+   /* margin-top: 1rem;*/
+}
+.form-control:focus {
+    border-color: #5a5a5a;
+}
+
+.btn {
+    background-color: #1c1c3c;
+    width: 50%;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 12px; 
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 32.3s ease;
+    margin-top: 2rem;
+}
+a {
+    display: block;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* تصميم نقاط التنقل */
+.page-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px; /* تباعد أكبر */
+}
+
+/* النقاط الثلاث */
+.dot {
+    width: 12px;  /* حجم الدائرة أكبر */
+    height: 12px;
+    margin: 0 6px; /* مسافة أكبر بين النقاط */
+    background-color: #d1d1d1;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* النقطة النشطة */
+.dot.active {
+    width: 14px;  /* تكبير النقطة النشطة */
+    height: 14px;
+    background-color: #1a133c;
+}

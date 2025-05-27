@@ -1,0 +1,183 @@
+:root {
+    --nav-color: #180446;          
+    --main-color: #EAEAEA;    
+    --home-color: #4F2C9E;     
+    --text-color: white;      
+    --hover-color: orange;     
+    --font-family: 'Arial', sans-serif; 
+  }
+  
+  
+  body {
+    background-color: var(--main-color) !important;
+    font-family: var(--font-family);
+  }
+  
+  
+  .navbar-custom {
+    background-color: var(--nav-color) !important; 
+    font-size: 22px;
+    
+  }
+  .links {
+    margin-right:100px
+  }
+  
+  
+  .navbar-custom .navbar-brand,
+  .navbar-custom .nav-link {
+    color: var(--text-color) !important; 
+    transition:.7s;
+    
+  }
+  .navbar-custom .nav-link{
+    padding-right: 35px!important;
+  
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: var(--hover-color) !important; 
+  }
+  
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    font-size: 1.5rem; 
+    font-weight: bold;
+  }
+  
+  .navbar-brand img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+  }
+  
+  .navbar-nav {
+    margin-left: auto; 
+  }
+  
+  .navbar-custom .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+  }
+  /*body*/
+body {
+    background-color: #f8f9fa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* الحاوية الرئيسية */
+.contact-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+/* FORM-BOX*/
+.form-box {
+    width: 55%;
+    height: 500px; /* تحديد ارتفاع ثابت */
+    background-color: #aeb0d2;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+    font-weight: bold;
+    text-align: center;
+    color: #150038;
+    margin-bottom: 20px; /* يضيف مسافة بين العنوان و الـ inputs */
+}
+
+
+.form-control {
+    box-shadow: none !important;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-control:hover{
+    border-color: transparent;
+    box-shadow: 0 0 0 0.5px #8f98b5;
+
+}
+
+.btn-submit {
+    display: block; /* يجعل الزر عنصر بلوك ليتمكن من أخذ المارجن */
+    margin: 20px auto; /* يوسّطه داخل العنصر الأب */
+    width: 45%;
+    background-color: #180446;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.btn-submit:hover {
+    background-color: #2a005e;
+}
+
+/*contact-info */
+.contact-info {
+    width: 40%;
+    padding: 20px;
+}
+
+.contact-info h4 {
+    font-weight: bold;
+    color: #2a2a2a;
+}
+
+.contact-info h2 {
+    font-weight: bold;
+    color: #180446;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info-item i {
+    width: 30px;
+    margin-right: 15px;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #180446;
+}
+/* جعل التصميم متجاوبًا */
+@media (max-width: 768px) {
+  .contact-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .form-box, .contact-info {
+      width: 100%;
+  }
+
+  .contact-info {
+      margin-top: 30px;
+  }
+
+  .info-item {
+      justify-content: center;
+  }
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartPark</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;700&family=Reem+Kufi+Fun:wght@700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/homepage.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/find_parking.css" />
+</head>
+<body class="bg-light min-vh-100">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/parking_logo3.png" alt="Logo" width="50" height="50" class="d-inline-block me-2" />
+        NEXTGEN PARKING
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center gap-3">
+          <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown">Features</a>
+            <ul class="dropdown-menu features-dropdown">
+              <li><a class="dropdown-item" href="find_parking.html"><i class="fas fa-map-marker-alt"></i> Find Parking</a></li>
+              <li><a class="dropdown-item" href="reserve_spot.php"><i class="fas fa-calendar-check"></i> Reserve Spot</a></li>
+              <li><a class="dropdown-item" href="payment.html"><i class="fas fa-wallet"></i> Easy Payment</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="choose_us.html">Why Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="ab-us/ab.html">About US</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="questions.html">FAQ </a></li>
+          <li class="nav-item"><a class="nav-link" href="sign/Sign-up&Sign-in/sign.php">Sign In </a></li>
+          <li class="nav-item"><a class="nav-link d-flex align-items-center" href="profile2.php"><i class="fas fa-user-circle user-icon"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navigation -->
+
+  <!-- start counter -->
+
+  <div class="parking-counter-container text-center mb-5">
+    <div class="counter-box shadow">
+      <div class="icon">
+        <i class="fas fa-parking"></i>
+      </div>
+      <div class="counter-info">
+        <p class="label">Available Parking Spots</p>
+        <h1 id="parking-counter">32</h1>
+      </div>
+    </div>
+  </div>
+  
+  
+   <!-- end counter -->
+
+        <!--  start map -->
+
+        <section>
+        
+            <div class="second-page">
+                <div class="text-div">
+                    <p>Where To Find Us ?</p>
+                </div>
+                <div class="images-div">
+                    <div class="big-image">
+                        <img src="images/img4.jpg">
+                    </div>
+                    <div class="small-images">
+                        <div class="small-image">
+                            <img src="images/img1.jpg"><a href="https://www.mallofegypt.com/?utm_source=google&utm_20px; font-weight:600=organic&utm_campaign=google_my_business" target="_blank"   class="i1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                       <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/>
+                                                       <circle cx="12" cy="10" r="3"/>
+                                                   </svg> Mall Of Egypt</a>
+                        </div>
+                      
+                        <div class="small-image">
+                            <img src="images/img3.jpg"><a href="https://www.facebook.com/mallofarabia/?locale=ar_AR" target="_blank"  class="i2"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg> Mall Of Arabia</a>
+                        </div>
+                      
+                        <div class="small-image">
+                            <img src="images/img5.jpg"><a href="https://www.festivalcitymallcairo.com/home/" target="_blank"  class="i3"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg> Cairo Festival</a>
+                        </div>
+                      
+                        <div class="small-image">
+                            <img src="images/img2.jpg"><a href="https://www.citystars-heliopolis.com.eg/en"  target="_blank" class="i4"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg> City Stars</a>
+                        </div>
+                      </div>
+                      
+        
+                </div>
+            </div>
+    
+    
+        </section> 
+            <!--End map -->
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0 d-flex align-items-center">
+          <img src="images/parking_logo6.png" alt="Company Logo" width="70" height="70" class="mb-3 mr-3">
+          <p class="small">Empowering cities to manage parking and provide the best parking experience for drivers, merchants and solution providers.</p>
+        </div>
+        <div class="col-md-2 mb-4 mb-md-0">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="homepage.html" class="text-white-50">Home</a></li>
+            <li><a href="payment.html" class="text-white-50">Pricing</a></li>
+            <li><a href="choose_us.html" class="text-white-50">Why Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4 mb-md-0">
+          <h6>Support</h6>
+          <ul class="list-unstyled">
+            <li><a href="questions.html" class="text-white-50">Help Center</a></li>
+            <li><a href="homepage.html#map" class="text-white-50">Map</a></li>
+            <li><a href="#" class="text-white-50">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Connect With Us</h6>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="text-center">
+        <p class="small mb-0">&copy; 2025 SmartPark. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle -->
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>

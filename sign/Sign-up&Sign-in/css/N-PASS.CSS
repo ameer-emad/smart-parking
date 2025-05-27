@@ -1,0 +1,117 @@
+/* ضبط الصفحة بحيث يكون النموذج في المنتصف */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dfe1e3;
+    margin: 0;
+}
+
+/* ضبط الهيكل العام للنموذج */
+.password-container {
+    width: 485px; 
+    padding: 40px;
+    background-color:#f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* تنسيق العنوان */
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #16095f;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* تنسيق حقول الإدخال */
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px; /* تكبير المساحة الداخلية */
+    font-size: 16px; /* تكبير الخط */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 32.3s ease;
+}
+
+.form-control:focus {
+    border-color: #5a5a5a;
+}
+
+/* أيقونة إظهار كلمة المرور */
+.password-toggle {
+    position: absolute;
+    right: 6px;
+    top: 65%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+}
+
+/* زر التأكيد */
+.btn {
+    width: 60%;
+    background-color: #1a133c;
+    color: #fff;
+    font-size: 18px;
+    padding: 6px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 32.3s ease;
+    margin-top: 40px;
+}
+
+
+/* رابط الرجوع إلى تسجيل الدخول */
+a {
+    display: block;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* تنسيق نقاط التنقل بين الصفحات */
+/* تصميم نقاط التنقل */
+.page-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* النقاط الثلاث */
+.dot {
+    width: 8px;  /* حجم الدائرة */
+    height: 8px;
+    margin: 0 4px; /* المسافة بين النقاط */
+    background-color: #d1d1d1; /* لون النقاط الغير مفعلة */
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* النقطة النشطة (التالته ) */
+.dot.active {
+    width: 10px;  /* حجم أكبر قليلاً */
+    height: 10px;
+    background-color: #1a133c; /* لون النقطة النشطة */
+}
